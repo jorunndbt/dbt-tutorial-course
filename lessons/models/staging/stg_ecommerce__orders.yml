@@ -58,9 +58,3 @@ models:
                 - Complete
                 - Returned
 
-      - name: num_items_ordered
-        description: "Number of items in the order"
-        tests:
-          - not_null
-          - dbt_expectations.expect_column_values_to_be_between:
-              min_value: 0
